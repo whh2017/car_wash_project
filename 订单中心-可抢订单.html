@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>订单中心-可抢订单</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/def.css">
+	<script src="js/jquery.js"></script>
+	<script src="js/global.js"></script>	
+</head>
+<body class="bg-color">
+	<header class="nav-lump">
+		<ul class="flex">
+			<li class="flex-1">
+				<a href="#">成功订单</a>
+			</li>
+			<li class="flex-1">
+				<a href="#">失败订单</a>
+			</li>
+			<li class="flex-1 cur">
+				<a href="#">可抢订单</a>
+			</li>
+			<li class="flex-1" id="filter-select">
+				<a href="javascript:void(0);"><i></i>筛选</a>
+			</li>
+		</ul>
+		<div class="filter-lump hide">
+			<div class="store flex">
+				<p>门店筛选</p>
+				<select class="flex-1">
+					<option>请选择</option>
+					<option>冰冰洗车店</option>
+				</select>
+				<i class="arrow"></i>
+			</div>
+			<div class="txt">
+				<p>订单状态筛选</p>
+				<div class="clearfix">
+					<button>已消费</button>
+					<button>未消费</button>
+				</div>
+			</div>
+			<button class="btn">重置条件</button>
+			<i class="heng"></i>
+		</div>
+	</header>
+	<!-- 顶部导航 end -->
+	<section class="allowance-lump">
+		<ul>
+			<li>
+				<div class="txt clearfix">
+					<div class="left fl">
+						<p>即时订单</p>
+						<p class="fs-28"><span>20</span>元</p>
+						<p>小费：5元</p>
+					</div>
+					<div class="right fl">
+						<p>服务：<span>精洗</span></p>
+						<p>消费时间：<span>今天上午</span></p>
+						<p>发起时间：<span>2016-2-29 10:24</span></p>
+					</div>
+				</div>
+				<div class="remain clearfix">
+					<p class="fl">剩余时间</p>
+					<div class="time fl">
+						<span>06</span><i>:</i><span>44</span><i>:</i><span>59</span>
+					</div>
+					<a href="#" class="fr">抢单</a>
+				</div>
+			</li>
+			<li>
+				<i class="clock"></i>
+				<div class="txt subscribe clearfix">
+					<div class="left fl">
+						<p>即时订单</p>
+						<p class="fs-28"><span>20</span>元</p>
+						<p>小费：5元</p>
+					</div>
+					<div class="right fl">
+						<p>服务：<span>精洗</span></p>
+						<p>消费时间：<span>今天上午</span></p>
+						<p>发起时间：<span>2016-2-29 10:24</span></p>
+					</div>
+				</div>
+				<div class="remain clearfix">
+					<p class="fl">剩余时间</p>
+					<div class="time fl">
+						<span>23</span><i>:</i><span>59</span><i>:</i><span>59</span>
+					</div>
+					<a href="#" class="fr">抢单</a>
+				</div>
+			</li>
+			<li>
+				<i class="clock"></i>
+				<div class="txt subscribe clearfix">
+					<div class="left fl">
+						<p>即时订单</p>
+						<p class="fs-28"><span>20</span>元</p>
+						<p>小费：5元</p>
+					</div>
+					<div class="right fl">
+						<p>服务：<span>精洗</span></p>
+						<p>消费时间：<span>今天上午</span></p>
+						<p>发起时间：<span>2016-2-29 10:24</span></p>
+					</div>
+				</div>
+				<div class="remain clearfix">
+					<p class="fl">剩余时间</p>
+					<div class="time fl">
+						<span>06</span><i>:</i><span>44</span><i>:</i><span>59</span>
+					</div>
+					<a href="#" class="fr">抢单</a>
+				</div>
+			</li>
+		</ul>
+
+	</section>
+	<script>
+		$('#filter-select').click(function(event){
+			$(this).toggleClass("cur");
+			$('.filter-lump').toggleClass("hide");
+			event.stopPropagation();  
+		});
+
+		$('.filter-lump').click(function(event){
+			event.stopPropagation();  
+		});
+		
+		$("body").bind("click",function(){
+       		$('#filter-select').removeClass("cur");
+  	  		$('.filter-lump').addClass("hide");
+    	});
+
+	</script>
+	
+	
+</body>
+</html>

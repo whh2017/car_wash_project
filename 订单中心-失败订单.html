@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>订单中心-成功订单</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/def.css">
+	<script src="js/jquery.js"></script>
+	<script src="js/global.js"></script>	
+</head>
+<body class="bg-color">
+	<header class="nav-lump">
+		<ul class="flex">
+			<li class="flex-1">
+				<a href="#">成功订单</a>
+			</li>
+			<li class="flex-1 cur">
+				<a href="#">失败订单</a>
+			</li>
+			<li class="flex-1">
+				<a href="#">可抢订单</a>
+			</li>
+			<li class="flex-1" id="filter-select">
+				<a href="javascript:void(0);"><i></i>筛选</a>
+			</li>
+		</ul>
+		<div class="filter-lump hide">
+			<div class="store flex">
+				<p>门店筛选</p>
+				<select class="flex-1">
+					<option>请选择</option>
+					<option>冰冰洗车店</option>
+				</select>
+				<i class="arrow"></i>
+			</div>
+			<div class="txt">
+				<p>订单状态筛选</p>
+				<div class="clearfix">
+					<button>已消费</button>
+					<button>未消费</button>
+				</div>
+			</div>
+			<button class="btn">重置条件</button>
+			<i class="heng"></i>
+		</div>
+	</header>
+	<!-- 顶部导航 end -->
+	<section class="allowance-lump">
+		<div class="miss">
+			<p class="tc">错过总金额(元)：<span>¥300.00</span></p>	
+		</div>
+		<ul class="fail">
+			<li>
+				<i class="yuyue"></i>
+				<dl>
+					<dt><p>服务项目：<span>精洗【预约订单】</span></p></dt>
+					<dt><p>失败原因：<span class="lose">用户取消订单</span></p></dt>
+					<dt><p>价格：<span>20元</span></p></dt>
+					<dt><p>价格：<span>10元</span></p></dt>
+					<dt><p>消费时间：<span>2016-3-1</span></p></dt>
+					<dt><p>消费时间：<span>2016-2-29 10：24</span></p></dt>
+				</dl>		
+			</li>
+			<li>
+				<i class="now"></i>
+				<dl>
+					<dt><p>服务项目：<span>精洗【预约订单】</span></p></dt>
+					<dt><p>失败原因：<span class="lose">已有其他门店应答</span></p></dt>
+					<dt><p>价格：<span>20元</span></p></dt>
+					<dt><p>价格：<span>10元</span></p></dt>
+					<dt><p>消费时间：<span>2016-3-1</span></p></dt>
+					<dt><p>消费时间：<span>2016-2-29 10：24</span></p></dt>
+				</dl>		
+			</li>
+			<li>
+				<i class="yuyue"></i>
+				<dl>
+					<dt><p>服务项目：<span>精洗【预约订单】</span></p></dt>
+					<dt><p>失败原因：<span class="lose">用户取消订单</span></p></dt>
+					<dt><p>价格：<span>20元</span></p></dt>
+					<dt><p>价格：<span>10元</span></p></dt>
+					<dt><p>消费时间：<span>2016-3-1</span></p></dt>
+					<dt><p>消费时间：<span>2016-2-29 10：24</span></p></dt>
+				</dl>		
+			</li>
+		</ul>
+
+</dl>
+
+</section>
+<script>
+		$('#filter-select').click(function(event){
+			$(this).toggleClass("cur");
+			$('.filter-lump').toggleClass("hide");
+			event.stopPropagation();  
+		});
+
+		$('.filter-lump').click(function(event){
+			event.stopPropagation();  
+		});
+		
+		$("body").bind("click",function(){
+       		$('#filter-select').removeClass("cur");
+  	  		$('.filter-lump').addClass("hide");
+    	});
+</script>
+
+</body>
+</html>

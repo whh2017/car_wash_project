@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>订单中心-成功订单</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/def.css">
+	<script src="js/jquery.js"></script>
+	<script src="js/global.js"></script>	
+</head>
+<body class="bg-color">
+	<header class="nav-lump">
+		<ul class="flex">
+			<li class="flex-1 cur">
+				<a href="#">成功订单</a>
+			</li>
+			<li class="flex-1">
+				<a href="#">失败订单</a>
+			</li>
+			<li class="flex-1">
+				<a href="#">可抢订单</a>
+			</li>
+			<li class="flex-1" id="filter-select">
+				<a href="javascript:void(0);"><i></i>筛选</a>
+			</li>
+		</ul>
+		<div class="filter-lump hide">
+			<div class="store flex">
+				<p>门店筛选</p>
+				<select class="flex-1">
+					<option>请选择</option>
+					<option>冰冰洗车店</option>
+				</select>
+				<i class="arrow"></i>
+			</div>
+			<div class="txt">
+				<p>订单状态筛选</p>
+				<div class="clearfix">
+					<button>已消费</button>
+					<button>未消费</button>
+				</div>
+			</div>
+			<button class="btn">重置条件</button>
+			<i class="heng"></i>
+		</div>
+	</header>
+	<!-- 顶部导航 end -->
+	<section class="allowance-lump">
+		<div class="account clearfix">
+			<div class="fl mr-170">
+				<p>已抢总金额(元)</p>
+				<span>¥300.00</span>
+			</div>
+			<div class="fl">
+				<p>已消费总金额(元)</p>
+				<span>¥100.00</span>
+			</div>
+		</div>
+		<ul class="mb-20">
+			<li>
+				<div class="txt">
+					<i class="now"></i>
+					<h2>[即时订单号] <span>2016022910165461</span></h2>
+					<p>服务：<span>精洗</span></p>
+					<p>优先小费：<span>5元</span></p>
+					<p>消费时间：<span>2016年1月4日</span></p>
+				</div>
+				<div class="price clearfix">
+					<p class="fl">¥20.00</p>
+					<span class="fr">未消费</span>
+				</div>
+			</li>
+			<li>
+				<div class="txt subscribe">
+					<i class="yuyue"></i>
+					<h2>[即时订单号] <span>2016022910165461</span></h2>
+					<p>服务：<span>精洗</span></p>
+					<p>优先小费：<span>5元</span></p>
+					<p>消费时间：<span>2016年1月4日</span></p>
+				</div>
+				<div class="price clearfix">
+					<p class="fl">¥20.00</p>
+					<span class="fr finished">已消费</span>
+				</div>
+			</li>
+			<li>
+				<div class="txt">
+					<i class="now"></i>
+					<h2>[即时订单号] <span>2016022910165461</span></h2>
+					<p>服务：<span>精洗</span></p>
+					<p>优先小费：<span>5元</span></p>
+					<p>消费时间：<span>2016年1月4日</span></p>
+				</div>
+				<div class="price clearfix">
+					<p class="fl">¥50.00</p>
+					<span class="fr unpaid">未付款</span>
+				</div>
+			</li>			
+		</ul>
+
+	</section>
+	<script>
+		$('#filter-select').click(function(event){
+			$(this).toggleClass("cur");
+			$('.filter-lump').toggleClass("hide");
+			event.stopPropagation();  
+		});
+
+		$('.filter-lump').click(function(event){
+			event.stopPropagation();  
+		});
+		
+		$("body").bind("click",function(){
+       		$('#filter-select').removeClass("cur");
+  	  		$('.filter-lump').addClass("hide");
+    	});
+
+	</script>
+	
+</body>
+</html>

@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>我要发洗即时洗车</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/def.css">
+	<script src="js/jquery.js"></script>
+	<script src="js/global.js"></script>	
+	<script src="js/date.js"></script>
+	<script src="js/mask.js"></script>
+</head>
+<body>
+	<header class="navigation-lump">
+		<ul class="clearfix">
+			<li class="cur"><a href="#">即时洗车</a></li>
+			<li><a href="#">预约洗车</a></li>
+			<li><a href="#">我的订单</a></li>
+			<li><a href="#">我的钱包</a></li>
+			<li class="last">
+				<i class="arrow"></i>
+				<dl class="other hide">
+					<dt><i class="store"></i><a href="#">我的门店</a></dt>
+					<dt><i class="exit"></i><a href="#">退出登录</a></dt>
+				</dl>
+			</li>
+		</ul>
+	</header>
+	<!-- 导航栏 end -->
+	<section class="content-lump">
+		<div class="introduce clearfix immediate">
+			<div class="img-box fl">
+				<img src="images/icons/now.png">
+			</div>
+			<p class="fl">什么是<a href="#">即时洗车</a>？</p>
+		</div>
+		<div class="store-lump">
+			<div class="tt">
+				<p>选择清洗方式</p>
+			</div>
+			<ul class="filter clearfix">
+				<li>
+					<select >
+						<option>省份/自治区</option>
+						<option>XX</option>
+					</select>
+					<i class="triangle-down"></i>
+				</li>
+				<li>
+					<select>
+						<option>市/地区</option>
+						<option>XX</option>
+					</select>
+					<i class="triangle-down"></i>
+				</li>
+				<li>
+					<select>
+						<option>区/县</option>
+						<option>XX</option>
+					</select>
+					<i class="triangle-down"></i>
+				</li>
+			</ul>
+
+			<ul class="store-list">
+				<li>
+					<div class="message clearfix">
+						<div class="img-box fl">
+							<img src="images/local/store1.jpg">	
+						</div>
+						<div class="txt fl">
+							<div class="clearfix">
+								<h2 class="fl">美车堂(富力店)</h2>
+								<a class="fr cancel" href="javascript:void(0);">我要买单</a>
+							</div>	
+							<div class="clearfix">
+								<p class="distance fl"><i class="location"></i>1.4 km</p>
+								<span class="tips fr">买单随机立减</span>
+							</div>
+							<p class="address">广州市天河区龙口中路203号</p>
+						</div>
+					</div>
+					<div class="comment flex flex-c flex-j">
+						<div class="clearfix">
+							<p class="fl">推荐指数</p>
+							<div class="img-box fl">
+								<img src="images/icons/star.png">
+								<img src="images/icons/star.png">
+								<img src="images/icons/star.png">
+								<img src="images/icons/star.png">
+								<img src="images/icons/half.png">
+							</div>
+						</div>
+						<div class="clearfix">
+							<i class="fl"></i>
+							<p class="fl">2264</p>
+						</div>
+					</div>
+					<dl class="package">
+						<dt class="flex flex-c flex-j">
+							<div class="items clearfix">
+								<h2 class="fl">套餐1</h2>
+								<div class="fl">
+									<span class="common fl">普洗</span><i>&nbsp;+&nbsp;</i><span class="wax fr">打蜡</span>
+									<p class="price">¥35.00</p>
+								</div>
+							</div>	
+							<div class="round"></div>
+						</dt>
+						<dt class="flex flex-c flex-j">
+							<div class="items clearfix">
+								<h2 class="fl">套餐2</h2>
+								<div class="fl">
+									<div class="clearfix">
+										<span class="better fl">精洗</span><i class="fl">&nbsp;+&nbsp;</i><span class="wax fl">打蜡</span>
+									</div>
+									<p class="price">¥45.00</p>
+								</div>
+							</div>	
+							<div class="round"></div>
+						</dt>
+						<dt class="flex flex-c flex-j">
+							<div class="items clearfix">
+								<h2 class="fl">套餐3</h2>
+								<div class="fl">
+									<div class="clearfix">
+										<span class="common fl">普洗</span><i class="fl">&nbsp;+&nbsp;</i><span class="wax fl">打蜡</span><i class="fl">&nbsp;+&nbsp;</i><span class="wax fl w-75">镀晶镀膜</span>
+									</div>
+									<p class="price">¥95.00</p>
+								</div>
+							</div>	
+							<div class="round"></div>
+						</dt>
+						<dt class="flex flex-c flex-j">
+							<div class="items clearfix">
+								<h2 class="fl">套餐4</h2>
+								<div class="fl">
+									<div class="clearfix">
+										<span class="better fl">精洗</span><i class="fl">&nbsp;+&nbsp;</i><span class="wax fl">打蜡</span><i class="fl">&nbsp;+&nbsp;</i><span class="wax fl w-75">镀晶镀膜</span>
+									</div>
+									<p class="price">¥105.00</p>
+								</div>
+							</div>	
+							<div class="round"></div>
+						</dt>
+					</dl>
+				</li>
+				<li>
+					<div class="message clearfix">
+						<div class="img-box fl">
+							<img src="images/local/store1.jpg">	
+						</div>
+						<div class="txt fl">
+							<div class="clearfix">
+								<h2 class="fl">美车堂(富力店)</h2>
+								<a class="fr cancel" href="javascript:void(0);">我要买单</a>
+							</div>	
+							<div class="clearfix">
+								<p class="distance fl"><i class="location"></i>1.4 km</p>
+								<span class="tips fr">买单随机立减</span>
+							</div>
+							<p class="address">广州市天河区龙口中路203号</p>
+						</div>
+					</div>
+					<div class="comment flex flex-c flex-j">
+						<div class="clearfix">
+							<p class="fl">推荐指数</p>
+							<div class="img-box fl">
+								<img src="images/icons/star.png">
+								<img src="images/icons/star.png">
+								<img src="images/icons/star.png">
+								<img src="images/icons/star.png">
+								<img src="images/icons/zero.png">
+							</div>
+						</div>
+						<div class="clearfix">
+							<i class="fl"></i>
+							<p class="fl">2264</p>
+						</div>
+					</div>
+					<dl class="package">
+						<dt class="flex flex-c flex-j">
+							<div class="items clearfix">
+								<h2 class="fl">套餐1</h2>
+								<div class="fl">
+									<span class="common fl">普洗</span><i>&nbsp;+&nbsp;</i><span class="wax fr">打蜡</span>
+									<p class="price">¥35.00</p>
+								</div>
+							</div>	
+							<div class="round"></div>
+						</dt>
+						<dt class="flex flex-c flex-j">
+							<div class="items clearfix">
+								<h2 class="fl">套餐2</h2>
+								<div class="fl">
+									<div class="clearfix">
+										<span class="better fl">精洗</span><i class="fl">&nbsp;+&nbsp;</i><span class="wax fl">打蜡</span>
+									</div>
+									<p class="price">¥45.00</p>
+								</div>
+							</div>	
+							<div class="round"></div>
+						</dt>
+						<dt class="flex flex-c flex-j">
+							<div class="items clearfix">
+								<h2 class="fl">套餐3</h2>
+								<div class="fl">
+									<div class="clearfix">
+										<span class="common fl">普洗</span><i class="fl">&nbsp;+&nbsp;</i><span class="wax fl">打蜡</span><i class="fl">&nbsp;+&nbsp;</i><span class="wax fl w-75">镀晶镀膜</span>
+									</div>
+									<p class="price">¥95.00</p>
+								</div>
+							</div>	
+							<div class="round"></div>
+						</dt>
+						<dt class="flex flex-c flex-j">
+							<div class="items clearfix">
+								<h2 class="fl">套餐4</h2>
+								<div class="fl">
+									<div class="clearfix">
+										<span class="better fl">精洗</span><i class="fl">&nbsp;+&nbsp;</i><span class="wax fl">打蜡</span><i class="fl">&nbsp;+&nbsp;</i><span class="wax fl w-75">镀晶镀膜</span>
+									</div>
+									<p class="price">¥105.00</p>
+								</div>
+							</div>	
+							<div class="round"></div>
+						</dt>
+					</dl>
+				</li>
+				
+			</ul>
+			<div class="more">
+				<p>点击查看更多<i class="arrow"></i></p>
+			</div>
+			
+		</div>
+	</section>
+	<!-- 洗车门店  end-->
+	<section class="user-lump pd-20">
+		<div class="wash-message">
+			<p class="bb-1">洗车价格:<span class="price">50.00</span>元</p>
+			<div class="flex flex-c flex-j">
+				<p>洗车时间:<span class="time">2016年3月4日</span></p>
+				<p class="blue" id="set-date"><i></i>设置具体时间段</p>
+			</div>
+		</div>
+		<div class="contact pd-15 flex">
+			<i></i>
+			<input class="flex-1" placeholder="请输入您的联系手机号">
+		</div>
+		<ul class="total">
+			<li class="clearfix">
+				<p class="fr">合计：<span>¥50.00</span></p>
+			</li>
+			<li class="clearfix">
+				<p class="fr">小费：<span>¥10.00</span></p>
+			</li>
+			<li class="clearfix">
+				<p class="fr">需支付：<span>¥60.00</span></p>
+			</li>
+		</ul>
+		<div class="blank">
+			
+		</div>
+	</section>
+	<!-- 用户填写 end -->
+	<div class="pop-lump">
+		<div class="img-box">
+			<i class="close"></i>
+			<img src="images/local/pop.png">
+		</div>
+		<div class="txt tc">
+			<h2>恭喜你获得10元红包！</h2>
+			<p>点击买单,马上使用</p>
+			<a href="#">立即买单</a>
+		</div>
+	</div>
+	<!--  弹出层 end -->
+	<div class="shade">
+		<div class="mask"></div>
+	</div>
+	<!-- 遮罩层 end-->
+	
+	<footer class="footer-lump">
+		<a href="#">立即发起</a>
+	</footer>
+	<!-- 底部 end -->
+
+	<script>
+	 	$(function(){
+		 	$('.navigation-lump .last').click(function(){
+				$(this).toggleClass("bb-0");
+				$('.other').toggleClass("hide");
+			});
+
+			var calendar = new datePicker();
+			calendar.init({
+				'trigger': '#set-date', /*按钮选择器，用于触发弹出插件*/
+				'type': 'date',/*模式：date日期；datetime日期时间；time时间；ym年月；*/
+				'minDate':'2016-1-1',/*最小日期*/
+				'maxDate':'2020-12-31',/*最大日期*/
+				'onSubmit':function(){/*确认时触发事件*/
+					$('.wash-message .time').html(calendar.value);
+				},
+				'onClose':function(){/*取消时触发事件*/
+				}
+			});
+
+			$('.store-list .package').on('click','dt',function(){
+				$that = $(this).find(".round");
+				$(this).siblings().find(".round").removeClass("cur");
+				if($that.hasClass("cur")){
+					$that.removeClass("cur");
+				}else{
+					$that.addClass("cur");
+				}
+				
+			});
+		});
+		
+	 	MaskIt($('.mask'));
+	 	$('.footer-lump').addClass("hide");
+
+	 	$('.pop-lump .close').click(function(){
+	 		UnMaskIt($('.mask'));
+	 		$('.pop-lump').addClass("hide");
+	 		$('.footer-lump').removeClass("hide");
+	 	});
+
+	 	$('.pop-lump a').click(function(){
+	 		UnMaskIt($('.mask'));
+	 		$('.pop-lump').addClass("hide");
+	 		$('.footer-lump').removeClass("hide");
+	 	});
+
+	</script>	
+
+</body>
+</html>
